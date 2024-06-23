@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "shortcut icon" type = "image/x-icon" href = "favicon (1).ico"/>
+    <link rel = "stylesheet" href = "https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        *{
+            background-color: rgb(5, 5, 24);
+            align-items: center;
+        }
+        @keyframes slideTop{
+            0%{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+            100%{
+                transform: translateY(0px);
+                opacity:1;
+            }
+        }
+        @keyframes slideRight {
+            0%{
+                transform:  translateX(-100px);
+                opacity:0;
+            }
+            100%{
+                transform:translateX(0px);
+                opacity:1;
+            }
+        }
+        .main-text{
+            animation: slideTop 1s ease forwards;
+        }
+        .portfolio-content{
+            animation: slideRight 1s ease forwards;
+        }
+        .portfolio-content{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+            align-content: center;
+            gap:2.5rem;
+            margin-top: 5rem;
+        }
+        .row{
+            position: relative;
+            overflow:hidden;
+            border-radius: 8px;
+            cursor:pointer;
+        }
+        .row img{
+            width:100%;
+            border-radius: 8px;
+            display:block;
+            align-items: center;
+            transition:transform 0.5s;
+        }
+        .layer{
+            width:100%;
+            height:0;
+            background:linear-gradient(rgba(255, 255, 255, 0.1),#00a6ff);
+            position: absolute;
+            border-radius: 8px;
+            left:0;
+            bottom:0;
+            overflow:hidden;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            padding:0 40px;
+            transition: height 0.5s;
+        }
+        .layer h3{
+            font:20px;
+            font-weight:600;
+            margin-bottom:15px;
+            background: none;
+        }
+        .layer p{
+            color:grey;
+            font-size:1rem;
+            line-height: 1.8;
+            background: none;
+        }
+        .layer i{
+            margin-top:20px;
+            font-size:20px;
+            background:none;
+            width:60px;
+            color:aliceblue;
+            height:60px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+        }
+        .row:hover img{
+            transform:scale(1.1);
+        }
+        .row:hover .layer{
+            height:100%;
+        }
+        .content{
+            background:rgb(255, 255, 255);
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items:center;
+            gap:2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class = "main-text">
+        <h1 style = "color:aquamarine; text-align:center; padding-top:8%;"><span>My Projects</span></h1>
+    </div>
+    <div class = "portfolio-content">
+        <div class = "row" id = "1">
+            <img src = "vision (2).jpg">
+            <div class = "layer">
+                <h3 >Vision Transformer</h3>
+                <p>To implement a Vision
+                    Transformer (ViT) using <br>TensorFlow and evaluate its performance on
+                    image <br>classification tasks</p>
+                
+            </div>
+        </div>
+        <div class = "row" id = "2">
+            <img src = "sms (1).jpg">
+            <div class = "layer">
+                <h3>SMS Spam Dettection</h3>
+                <p>It isa project aimed at tackling the issue of unwanted and<br> unsolicited text messages, commonly referred to as "spam." </p>
+                
+            </div>
+    </div><br>
+    <div class = "row" id = "1">
+        <img src = "titanic (1).jpeg">
+        <div class = "layer">
+            <h3>Titanic Classifier</h3>
+            <p>Using machine learning algorithms, it analyzes features like age,<br> gender, and class in a labeled dataset</p>
+            
+        </div>
+    </div>
+    <div class = "row" id = "2">
+        <img src = "house (1).jpg">
+        <div class = "layer">
+            <h3>House Price Prediction</h3>
+            <p>It helps the developer determine the selling price of a house and <br>can help the customer to arrange the right time to purchase a house.</p>
+            
+        </div>
+    </div><br>
+    <div class = "row" id = "1">
+        <img src = "iris (1).jpg">
+        <div class = "layer">
+            <h3>Iris Flower Classification</h3>
+            <p>Iris flowers are classified into three species: setosa, versicolor, and virginica, each of which exhibits distinct characteristics in <br>terms of measurements.</p>
+        </div>
+    </div>
+    <div class = "row" id = "2">
+        <img src = "unemp (1).jpeg">
+        <div class = "layer">
+            <h3>Unemployment Analysis with Python</h3>
+            <p>It is used to perform a comprehensive analysis of unemployment <br>using Python.</p>
+        </div>
+    </div>
+    <a href = "#"><img src = "arrow-removebg-preview-removebg-preview (1).png"></a>
+</body>
+</html>
+
+
+
+

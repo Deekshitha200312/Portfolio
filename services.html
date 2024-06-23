@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "shortcut icon" type = "image/x-icon" href = "favicon (1).ico"/>
+    <title>Services</title>
+    <style>
+        @keyframes slideTop{
+            0%{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+            100%{
+                transform: translateY(0px);
+                opacity:1;
+            }
+        }
+        @keyframes slideRight {
+            0%{
+                transform:  translateX(-100px);
+                opacity:0;
+            }
+            100%{
+                transform:translateX(0px);
+                opacity:1;
+            }
+        }
+        @keyframes slideBottom {
+            0%{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+            100%{
+                transform: translateY(0px);
+                opacity:1;
+            }
+        }
+        *{
+            background-color: rgb(4, 4, 23);
+        }
+        button{
+            width:40%;
+            height:3%;
+            padding:15px 0;
+            font-size: 100%;
+            border-radius: 10px;
+            text-align: center;
+            margin: 5px;
+            font-weight: bold;
+            border: 1px solid whitesmoke;
+            background:cyan;
+            display: inline-block;
+            transition-duration: 0.5s;
+            transition: all 0.2s ease;
+            cursor:pointer;
+            box-shadow: 0 0 5px grey, 0 0 25px grey;
+        }
+        button:active{
+            transform: scale(0.96);
+        }
+        .main_text{
+            animation: slideTop 1s ease forwards;
+        }
+        .box{
+            animation: slideRight 1s ease forwards;
+        }
+        button:hover{
+            box-shadow:none;
+        }
+        .main-text{
+            text-align: center;
+            padding-left: 20%;
+        }
+        .main-text p{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .scontent{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+            align-items: center;
+            gap:2.5rem;
+            margin-top:5rem;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .box{
+            background-color:rgb(8, 8, 44);
+            padding:35px 45px;
+            border-radius: 8px;
+            transition:all .45s ease;
+        }
+        .box{
+            background-color:rgb(8, 8, 44);
+            padding:35px 45px;
+            border-radius: 8px;
+            transition:all .45s ease;
+        }
+        .box:hover{
+            transform: translateY(-8px);
+            cursor:pointer;
+            background-color: rgb(8, 8, 44);
+        }
+    </style>
+</head>
+<body>
+    <div class = "main_text">
+        <h1 style = "color:aquamarine; text-align:center; padding-top:8%;">MY <span>SERVICES</span></h1>
+    </div>
+    <div class = "scontent">
+        <div class = "box">
+            
+            <h3 style = "color: grey; background:none;">Web Development:</h3>
+            <p style = "color:aliceblue; background:none;">&nbsp;&nbsp;&nbsp;&nbsp;Created a Portfolio website of my own, have a prior knowledge of web development which is used for making a qualified range of websites.
+                 Making these websites using HTML, JS and CSS.</p>
+            <
+        </div>
+        <div class = "box">
+            
+            <h3 style = "color: grey; background:none;">Machine Learning:</h3>
+            <p style = "color:aliceblue; background:none;">&nbsp;&nbsp;&nbsp;&nbsp;With the knowledge of concepts related to Machine Learning, the Projects done were:
+                Iris Flower Classification, Car Price Prediction. If there is any need in projects, can contact me!</p>
+            
+        </div>
+        <div class = "box">
+            <h3 style = "color: grey; background:none;">Technical Content Writing</h3>
+            <p style = "color:aliceblue; background:none;">&nbsp;&nbsp;&nbsp;&nbsp;I can write any Technical related content writing, you can contact me if needed!</p>
+        </div>
+    </div>
+</body>
+</html>
